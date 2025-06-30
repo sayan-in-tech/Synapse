@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 from typing import List, Dict, Any
 import os
 from datetime import datetime
-from fake_candidates_dataset import generate_fake_candidates
+from linkedin_scrapper import scrape_candidates
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -56,7 +56,7 @@ class LinkedInSourcingAgent:
         st.info("🔍 Generating candidate profiles...")
         
         # Use the fake dataset instead of Gemini
-        candidates = generate_fake_candidates(job_description, num_candidates=100)
+        candidates = scrape_candidates(job_description, num_candidates=100)
         
         # Add some delay to simulate processing
         time.sleep(2)

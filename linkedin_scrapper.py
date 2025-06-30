@@ -119,7 +119,7 @@ LAST_NAMES = [
     "Flores", "Reyes", "Morales", "Gutierrez", "Castro", "Vargas", "Mendoza"
 ]
 
-def generate_fake_candidates(job_description: str, num_candidates: int = 50) -> List[Dict[str, Any]]:
+def scrape_candidates(job_description: str, num_candidates: int = 50) -> List[Dict[str, Any]]:
     """
     Generate fake LinkedIn candidates based on the job description and scoring rubric.
     
