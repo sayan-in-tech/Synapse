@@ -40,7 +40,7 @@ Job Description → Candidate Generation → Fit Scoring → Outreach Generation
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/sayan-in-tech/Synapse.git
    cd Synapse
    ```
 
